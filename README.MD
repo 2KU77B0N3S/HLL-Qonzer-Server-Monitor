@@ -135,7 +135,6 @@ See `package.json` for full dependency list.
 
 ## Contributing
 This project is private and intended for Qonzer customers.
-This is a Fan Project and not 
 
 ## License
 MIT - For use by Qonzer customers only.
