@@ -206,7 +206,7 @@ async function updateEmbed(server, index) {
       )
       .setColor(data.ping < 100 ? 0x00ff00 : data.ping < 200 ? 0xffff00 : 0xff0000)
       .setTimestamp()
-      .setFooter({ text: `IP: ${server.ip}:${server.port}` });
+      .setFooter({ text: `Powered by Qonzer` });
 
     const file = new AttachmentBuilder(buffer, { name: `pingchart${index + 1}.png` });
 
