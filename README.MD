@@ -34,6 +34,19 @@
 </div>
 <br />
 
+# Table of Contents
+- [Features](#features)
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Configuration](#configuration)
+- [Dependencies](#dependencies)
+- [Notes](#notes)
+- [Troubleshooting](#troubleshooting)
+- [Contributing](#contributing)
+- [License](#license)
+- [Disclaimer](#disclaimer)
+
 A Discord bot designed exclusively for Qonzer customers to monitor *Hell Let Loose* game server status.
 The bot provides real-time updates on server ping, player count, map, and connection details, with a graphical ping history chart, refreshed every 15 seconds.
 
