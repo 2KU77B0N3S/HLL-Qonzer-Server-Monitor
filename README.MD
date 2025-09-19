@@ -1,4 +1,38 @@
-# HLL-Qonzer-Server-Monitor
+<div align="center">
+  <img src="https://github.com/FwSchultz/assets/blob/main/bots/2KU77B0N3S/Logo.png" alt="logo" width="200" height="auto" />
+  <h1>HLL-Qonzer-Server-Monitor</h1>
+ 
+<!-- Badges -->
+<p>
+  <a href="https://github.com/2KU77B0N3S/HLL-Qonzer-Server-Monitor/graphs/contributors">
+    <img src="https://img.shields.io/github/contributors/2KU77B0N3S/HLL-Qonzer-Server-Monitor" alt="contributors" />
+  </a>
+  <a href="">
+    <img src="https://img.shields.io/github/last-commit/2KU77B0N3S/HLL-Qonzer-Server-Monitor" alt="last update" />
+  </a>
+  <a href="https://github.com/2KU77B0N3S/HLL-Qonzer-Server-Monitor/network/members">
+    <img src="https://img.shields.io/github/forks/2KU77B0N3S/HLL-Qonzer-Server-Monitor" alt="forks" />
+  </a>
+  <a href="https://github.com/2KU77B0N3S/HLL-Qonzer-Server-Monitor/stargazers">
+    <img src="https://img.shields.io/github/stars/2KU77B0N3S/HLL-Qonzer-Server-Monitor" alt="stars" />
+  </a>
+  <a href="https://github.com/2KU77B0N3S/HLL-Qonzer-Server-Monitor/issues/">
+    <img src="https://img.shields.io/github/issues/2KU77B0N3S/HLL-Qonzer-Server-Monitor" alt="open issues" />
+  </a>
+  <a href="https://github.com/2KU77B0N3S/HLL-Qonzer-Server-Monitor/blob/master/LICENSE">
+    <img src="https://img.shields.io/github/license/2KU77B0N3S/HLL-Qonzer-Server-Monitor.svg" alt="license" />
+  </a>
+</p>
+  
+<h4>
+  <a href="https://github.com/2KU77B0N3S/HLL-Qonzer-Server-Monitor">Documentation</a>
+  <span> · </span>
+  <a href="https://github.com/2KU77B0N3S/HLL-Qonzer-Server-Monitor/issues/">Report Bug</a>
+  <span> · </span>
+  <a href="https://github.com/2KU77B0N3S/HLL-Qonzer-Server-Monitor/issues/">Request Feature</a>
+</h4>
+</div>
+<br />
 
 A Discord bot designed exclusively for Qonzer customers to monitor *Hell Let Loose* game server status.
 The bot provides real-time updates on server ping, player count, map, and connection details, with a graphical ping history chart, refreshed every 15 seconds.
