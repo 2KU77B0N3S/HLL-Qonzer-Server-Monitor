@@ -48,13 +48,14 @@
 - [Disclaimer](#disclaimer)
 
 A Discord bot designed exclusively for Qonzer customers to monitor *Hell Let Loose* game server status.
-The bot provides real-time updates on server ping, player count, map, and connection details, with a graphical ping history chart, refreshed every 15 seconds.
+The bot provides real-time updates on server ping, player count, map, connection details, VIP slots, and queue info — with a graphical ping history chart, refreshed every 15 seconds.
 
 ## Features
 - Monitors up to three *Hell Let Loose* game servers.
-- Displays server details (name, map, player count, ping, and connection info) in a Discord embed.
+- Displays server details (name, map, player count, ping, queue, VIP count, and connection info) in a Discord embed.
 - Generates a line chart of ping history using Chart.js.
 - Updates server status every 15 seconds.
+- Shows **current VIP slots** and **queue status (x/6)** directly in embeds.
 - Supports scheduled daily restarts (optional, via environment variable).
 - Color-coded ping indicators (green <100ms, yellow <200ms, red ≥200ms).
 - Cleans up old messages in the Discord channel on startup.
@@ -97,7 +98,7 @@ The bot provides real-time updates on server ping, player count, map, and connec
 ## Usage
 - The bot logs into Discord and posts server status embeds to the specified channel.
 - Each server’s embed includes:
-  - Server name, map, player count, ping, and connection details.
+  - Server name, map, player count, ping, VIP slots, queue, and connection details.
   - A chart showing ping history (last 50 data points, ~12.5 minutes).
 - Embeds are updated every 15 seconds.
 - If `RESTART_TIME` is set, the bot restarts daily at the specified time (e.g., `4:00AM`).
@@ -119,6 +120,7 @@ The bot provides real-time updates on server ping, player count, map, and connec
 - `node-fetch`: For querying server status from Qonzer API.
 - `dotenv`: For environment variable management.
 - `node-cron`: For scheduling daily restarts.
+- `source-server-query`: For fetching VIP/queue gamestate directly from servers.
 
 See `package.json` for full dependency list.
 
@@ -131,7 +133,8 @@ See `package.json` for full dependency list.
 - **Bot not posting**: Check `DISCORD_TOKEN` and `CHANNEL_ID` in `.env`. Ensure the bot has permissions in the Discord channel.
 - **No server data**: Verify `GAMESERVER_IP_X` and `GAMESERVER_QUERY_PORT_X` values.
 - **Chart issues**: Ensure `chartjs-node-canvas` dependencies are installed correctly (may require additional system libraries like `cairo`).
-- **Restart not working**: Confirm `RESTART_TIME` format or use a process manager to handlle restarts.
+- **VIP/Queue showing N/A**: Some servers may not expose the gamestate tag; verify the server query port is correct.
+- **Restart not working**: Confirm `RESTART_TIME` format or use a process manager to handle restarts.
 
 ## Contributing
 This project is private and intended for Qonzer customers.
@@ -140,5 +143,5 @@ This project is private and intended for Qonzer customers.
 MIT - For use by Qonzer customers only.
 
 ## Disclaimer
-This is a fan-made project and is not officially affiliated with Qonzer or *Hell Let Loose*. It is provided as-is for community use, leveraging the Qonzer API for server monitoring.
+This is a fan-made project and is not officially affiliated with Qonzer or *Hell Let Loose*. It is provided as-is for community use, leveraging the Qonzer API and direct gamestate queries for server monitoring.
 If you want to support the project or me, buy a Gameserver at Qonzer [HERE](https://qonzer.com/aff.php?aff=55) - THX!
