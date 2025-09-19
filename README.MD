@@ -142,3 +142,4 @@ MIT - For use by Qonzer customers only.
 
 ## Disclaimer
 This is a fan-made project and is not officially affiliated with Qonzer or *Hell Let Loose*. It is provided as-is for community use, leveraging the Qonzer API for server monitoring.
+If you want to support the project or me, buy a Gameserver at Qonzer [HERE](https://qonzer.com/aff.php?aff=55) - THX!
